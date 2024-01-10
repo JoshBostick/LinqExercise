@@ -60,9 +60,9 @@ namespace LinqExercise
             Console.WriteLine() ;
 
             //TODO: Change the value at index 4 to your age, then print the numbers in descending order
+            Console.Write("Index four changed, descending order: ");
             numbers[4] = 43;
             var changeIndexFour = numbers.OrderByDescending(x => x);
-            Console.Write("Index four changed: ");
             foreach (var number in changeIndexFour)
             {
                 Console.Write(number + " ");
@@ -99,8 +99,10 @@ namespace LinqExercise
             Console.Write("Average of years of experience of employess over 35 with 10 years or less experience: ");
             var avgYoe = yoe.Average(emp => emp.YearsOfExperience);
             Console.Write($"{avgYoe} years");
+            Console.WriteLine();
 
             //TODO: Add an employee to the end of the list without using employees.Add()
+            Console.WriteLine();
             Employee newEmployee = new Employee()
             {
                 FirstName = "Darth",
